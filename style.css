@@ -46,6 +46,15 @@ a {
   color:grey;
   text-decoration: none;
   }
+
+a {
+  display: inline-block; /* Required for transform to work properly on inline links */
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1); /* Increases size by 10% */
+}
   
 .column {
   float: left;
